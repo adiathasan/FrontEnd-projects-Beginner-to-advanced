@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="flex-container">
+            <li class="box one"><a href="">first</a></li>
+            <li class="box two"><a href="">middle</a></li>
+            <li class="box three"><a href="">last</a></li>
+        </ul>
+    </div>
+        <div class="anm">
+            <button class="btn" id="btn">stack</button>||<button class="btn" id="btn2">square</button>
+        </div>
+    <div class="main">
+        <div class="suck">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit optio vero adipisci libero doloribus
+                praesentium suscipit officia. Dignissimos esse quisquam nam explicabo atque excepturi tempore illo magnam
+                laudantium reiciendis.</p>
+        </div>
+        <div class="suck">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit optio vero adipisci libero doloribus
+                praesentium suscipit officia. Dignissimos esse quisquam nam explicabo atque excepturi tempore illo magnam
+                laudantium
+                reiciendis.</p>
+        </div>
+        <div class="suck">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit optio vero adipisci libero doloribus
+                praesentium suscipit officia. Dignissimos esse quisquam nam explicabo atque excepturi tempore illo magnam
+                laudantium
+                reiciendis.</p>
+        
+        </div>
+        <div class="suck">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit optio vero adipisci libero doloribus
+                praesentium suscipit officia. Dignissimos esse quisquam nam explicabo atque excepturi tempore illo magnam
+                laudantium
+                reiciendis.</p>
+        </div>
+    </div>
+
+    <script>
+        var grab = document.getElementById('btn');
+        var grab2 = document.getElementById('btn2');
+        var suck = document.querySelector('.main');
+        
+        grab.addEventListener('click', function(){
+            suck.classList.add('switch');
+        })
+
+        grab2.addEventListener('click', function (){
+                suck.classList.remove('switch');
+        })
+    </script>
+</body>
+</html>

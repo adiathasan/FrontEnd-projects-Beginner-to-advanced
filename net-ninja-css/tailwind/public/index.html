@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-600 font-serif overflow-x-hidden">
+    <div class="  bg-gray-600 bg-opacity-25  sm:grid sm:grid-cols-3">
+        <!-- Navbar started -->
+        <div class=" md:col-span-1">
+            <nav class="md:flex md:justify-end">
+                <div class="uppercase font-bold ml-4 text-gray-700 border-b-2 border-gray-100 h-12 p-2">
+                    <h2 class="flex justify-between">
+                        <a href="/" class=" hover:text-indigo-700">Food Ninja /|\ HaI YA</a>
+                        
+                        <svg id="drop" class=" w-6 cursor-pointer sm:hidden" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </h2>
+                </div>
+                <ul class="mt-4 hidden sm:block" id="menu">
+                    <li class="font-semibold text-gray-700 hover:text-indigo-700 flex mr-4 mt-8  border-r-4 border-red-600">
+                        <svg class=" w-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                            </path>
+                        </svg>
+                        <a href="#" class=" pt-2">Home</a>
+                    </li>
+                    <li  class=" hover:text-indigo-700 flex mr-4 mt-8 border-r-4 border-white">
+                        <svg class=" w-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <a href="#">about</a>
+                    </li>
+                    <li class=" hover:text-indigo-700 flex mr-4 mt-8 border-r-4 border-white">
+                        <svg class=" w-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z">
+                            </path>
+                            <path 
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                        <a href="#">Content</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Navbar ends -->
+         <main class="pl-12 pr-12 pt-6 bg-gray-200 sm:col-span-2">
+            <div class=" font-sans flex justify-center sm:justify-end font-semibold">
+                <a href="" class=" text-blue-700 btn mr-4 hover:bg-indigo-700 hover:text-white hover:border-indigo-800 transition ease-out duration-700">Log in</a>
+                <a href="" class=" pl-2 pr-2 text-red-700 btn hover:bg-red-700 hover:text-white transition ease-out duration-700">Sign up</a>
+            </div>
+            <header class="flex justify-center">
+                <h2 class="font-bold text-3xl text-gray-800">Recipies for</h2>
+                <span class=" p-4 text-black">Ninjas</span>
+            </header>
+            <hr>
+            <div>
+                <!-- card component starts -->
+                <div>
+                    <h3 class="font-semibold text-gray-700 mt-8 mb-6 border-gray-300 border-b-2">Latest Recipies</h3>
+                    <div class=" lg:grid lg:grid-cols-3 lg:gap-10">
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/stew.jpg" alt="Stew" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2"> 
+                                <span class=" font-bold">
+                                    Lorem ipsum dolor
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja Hatori.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/curry.jpg" alt="noodles" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2">
+                                <span class=" font-bold">
+                                    Delicious noodles.
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja kukku.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path></svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/noodles.jpg" alt="noodles" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2">
+                                <span class=" font-bold">
+                                    Delicious noodles
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja sahanka.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card components starts -->
+                <div>
+                    <h3 class="font-semibold text-gray-700 mt-8  border-gray-300 border-b-2 mb-6">Popular Recipies</h3>
+                    <div class=" lg:grid lg:grid-cols-3 lg:gap-10">
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/stew.jpg" alt="Stew" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2">
+                                <span class=" font-bold">
+                                    Lorem ipsum dolor
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja Hatori.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/curry.jpg" alt="noodles" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2">
+                                <span class=" font-bold">
+                                    Delicious noodles.
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja kukku.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card hover:shadow-2xl">
+                            <img src="image/noodles.jpg" alt="noodles" class=" w-full object-cover h-40">
+                            <div class="pt-2 pl-2">
+                                <span class=" font-bold">
+                                    Delicious noodles
+                                </span>
+                                <span class="block text-sm">
+                                    Recipe by Ninja sahanka.
+                                </span>
+                            </div>
+                            <div class="badge">
+                                <svg class=" w-5 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>
+                                    25 mins
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="flex justify-center ">
+                    <a href="#" class="btn text-gray-900 hover:bg-gray-600 hover:text-white hover:border-gray-500 hover:shadow transition ease-out duration-500 transform hover:scale-125 ">Load more</a>
+            </div>
+                <footer class=" bg-gray-200 pt-4 pb-4 mb-0 col-span-1 border-t-4 border-gray-400 mt-4" style="text-align: center;">
+                    <div>
+                        <p>copyright <span class="text-gray-800 ">@</span> 2020 by <span class="text-gray-900">Ninja Adiat</span></p>
+                    </div>
+                    <div class="">
+                        <ul class="block">
+                            <li><a href="#" class="text-gray-900 font-semibold">Github</a></li>
+                            <li class="text-blue-600 font-semibold"><a href="#">Facebook</a></li>
+                        </ul>
+                    </div>
+                </footer>
+        </main>
+        <!-- footer starts -->
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
+
+
+
+
+

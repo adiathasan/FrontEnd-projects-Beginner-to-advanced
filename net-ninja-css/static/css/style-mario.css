@@ -1,0 +1,180 @@
+body{
+    background: #2b032b;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+ 
+}
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header{
+    background: #ff1909;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 9%;
+}
+
+header h1{
+    display: inline-block;
+    border: 4px solid whitesmoke;
+    border-radius: 33px;
+    margin-top: 1%;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .welcome{
+    max-width: 40%;
+    width: 360px;
+    margin: 10px auto;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    padding: 10px;
+    background-color: #ffbc40e1;
+}
+
+.banner h2{
+    text-align: center;
+}
+
+.banner .welcome h2 span{
+    font-size: 1.4em;
+    text-align: start;
+}
+
+nav{
+    background: #292626;
+    position: sticky;
+    top: 50px;
+    margin-bottom: 30px;
+
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+nav li{
+    list-style-type: none;
+    padding-left: 2px;
+    margin: 5px;
+    grid-column: auto;
+    border-bottom: 1px solid hsla(0, 65%, 3%, 0.685);
+}
+
+nav li a{
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav li a.join{
+    color: #ffbd17;
+}
+
+
+nav li a:hover{
+    font-size: 1.1em;
+    border-bottom: 1px solid hsla(0, 45%, 94%, 0.815);
+}
+
+main{
+    max-width: 100%;
+    width: 360px;
+    margin: 1px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+main h2{
+    display: inline-block;
+    border-bottom: 1px solid whitesmoke;
+}
+
+main p{
+    line-height: 2em;
+    color: darkgray;
+}
+
+main .images{
+    display: flex;
+}
+
+main .images li{
+    max-width: 40%;
+    padding: 10px;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+
+.join-t {
+    background: #292626;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.join-t h2{
+    display: inline-block;
+    border-bottom: 1px solid orange;
+}
+
+.join-t p{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.join-t input{
+    width: 100%;
+    margin: 10px auto;
+    background: #00000085;
+    border-radius: 20px;
+    padding: 10px 2px;
+    text-align: center;
+    color: orange;
+}
+
+
+.join-t button{
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: 2px solid orange;
+    background: #00000085;
+    color: orange;
+}
+
+.join-t button:hover{
+    padding: 7px 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background:  orange;
+    color: black;
+
+}
+
+footer{
+    background: #ff1909;
+    text-align: center;
+    padding: 3px;
+}

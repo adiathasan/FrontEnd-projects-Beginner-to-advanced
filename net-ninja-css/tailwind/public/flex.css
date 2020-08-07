@@ -1,0 +1,144 @@
+*{
+    font-family: Verdana;
+    margin: 0;
+    
+}
+
+body{
+    background-color: #4b4b4b;
+    color: whitesmoke;
+}
+
+.wrapper{
+
+    max-width: 1260px;
+    margin: 0 auto;
+    background: rgb(22, 19, 19);
+
+}
+
+a{
+    text-decoration: none;
+    display: block;
+    color: whitesmoke;
+}
+
+a:hover{
+    color: orange;
+}
+
+li:hover{
+    border-bottom: 1px solid #ebebeb;
+    background-color:  #222222;
+    position: relative;
+    top: 2px;
+    color: orange;
+}
+
+li{
+    /* flex: 1 0 200px; */
+    padding: 10px 0;
+    border-bottom: 1px solid orange;
+    list-style-type: none;
+    position: relative;
+    left: -20px;
+    
+    /* margin: 5px;   */
+}
+
+ul{
+    text-align: center;
+
+    
+}
+
+.main{
+
+    margin: 30px 0;
+}
+
+
+.suck{
+    background-color: rgb(158, 158, 158);
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    color: black;
+}
+
+.suck h3{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(83, 60, 17);
+    
+}
+
+.anm{
+    display: none;
+}
+
+
+
+@media screen and (min-width:600px){
+
+    ul{
+        /* text-align: center; */
+        display: flex;
+        flex-wrap: wrap; 
+        
+    }
+
+    li{
+        flex: 1 1 0;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: .2s linear;
+    }
+
+    .suck{
+        flex: 0 1 33%;
+    }
+
+    .anm{
+        display: inline-block;
+        position: relative;
+        left: 80px;
+        top: 30px;
+    }
+
+    .btn{
+        padding: 7px 17px;
+        background-color: black;
+        color: #f0aa27;
+        border-radius: 30px;
+    }
+
+    .btn:hover{
+        position: relative;
+        top: 2px;
+        border-radius: 10px;
+        background-color: #f0aa27;
+        color: black;
+    }
+
+    .main{
+        transition: flex-basis .3s linear;
+    }
+
+    .switch{
+        background-color: rgb(158, 158, 158);
+        max-width: 500px;
+        padding: 10px;
+        margin: 20px auto;
+        color: black;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+}
