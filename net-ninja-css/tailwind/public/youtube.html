@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title class=" text-sm text-red-600">Youtube clone</title>
+    
+</head>
+<body class=" bg-gray-200 overflow-x-hidden">
+    <nav class=" grid grid-cols-12 shadow-md bg-red-100 sticky top-0">
+        <div class=" col-span-2 flex items-center">
+            <div class=" m-4 cursor-pointer" id="nav">
+                <i class="fa fa-navicon "></i>
+            </div> 
+            <div><i class=" fa fa-youtube-play fa-2x text-red-600 ml-4 uppercase"> </i></div>      
+        </div>
+
+        <div class=" col-span-10 flex justify-between items-center">
+            <div>
+                <form action="" class=" pl-32">
+                    <input type="search" placeholder="Search" class=" p-2 rounded-lg bg-gray-300 w-64 shadow-inner">
+                    <button type="submit"
+                        class=" py-2 border-gray-400 border-2 px-4 text-red-500 rounded-lg hover:text-white hover:bg-red-500 transition ease-out duration-1000"><i
+                            class=" fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class=" flex items-center">
+                <a href="#"><i class="fa fa-upload text-gray-700 mr-8"></i></a>
+                <a href="#"><i class="fa fa-calendar text-gray-700 mr-8"></i></a>
+                <a href="#"><i class="fa fa-bell text-gray-700 mr-8"></i></a>
+                <a href="#"><i class="fa fa-picture-o text-gray-700 mr-8 rounded-full"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main class=" grid grid-cols-12 bg-gray-200">
+        <div class=" col-span-2 bg-gray-300 py-4 min-h-screen border-t border-gray-500 border-b scrolling-touch overflow-auto">
+           <div class="mb-4 pb-4 border-gray-500 border-b">
+                <a href="#" class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 tr transition ease-out duration-700">
+                    <i class=" fa fa-home fa-lg text-red-700"></i>
+                    <span class=" text-gray-800 ml-4">Home</span>
+                </a>
+                <a href="#" class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 transition ease-out duration-700">
+                    <i class=" fa fa-fire fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Trending</span>
+                </a>
+                <a href="#" class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 transition ease-out duration-700">
+                    <i class=" fa fa-list text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Subsciptions</span>
+                </a>
+           </div>
+            <div class="mb-6 pb-4 border-gray-500 border-b">
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 tr transition ease-out duration-700">
+                    <i class=" fa fa-book fa-lg text-grey-700"></i>
+                    <span class=" text-gray-800 ml-4">Library</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 transition ease-out duration-700">
+                    <i class=" fa fa-history fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">History</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 transition ease-out duration-700">
+                    <i class=" fa fa-play text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Your videos</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 tr transition ease-out duration-700">
+                    <i class=" fa fa-clock-o fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Watch later</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 transition ease-out duration-700">
+                    <i class=" fa fa-thumbs-o-up fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Liked videos</span>
+                </a>
+            </div>
+            <div class=" font-semibold text-gray-800 pl-4">
+                Subscriptions
+            </div>
+            <div class="mb-4 pb-4 border-gray-500 border-b">
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 tr transition ease-out duration-700">
+                    <i class=" fa fa-dollar fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">Traversy Media</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 mb-4 transition ease-out duration-700">
+                    <i class=" fa fa-joomla fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4">The Net Ninja</span>
+                </a>
+                <a href="#"
+                    class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 transition ease-out duration-700">
+                    <i class=" fa fa-mortar-board fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4 truncate">Web dev simplified</span>
+                </a>
+                <a href="#" class="flex items-center p-2 pl-10 hover:bg-gray-400 hover:text-gray-900 transition ease-out duration-700">
+                    <i class=" fa fa-arrow-down fa-lg text-gray-700"></i>
+                    <span class=" text-gray-800 ml-4 truncate">Show 122 More</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-span-10 container ml-4 py-6  mx-auto">
+            <div class="font-bold ">
+                Recommended
+            </div>
+            <div class="grid mb-4 grid-cols-4 grid-2 pr-2 ">
+                <div class=" mr-4 py-6">
+                    <a href="#">
+                        <img src="image/stew.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Stew on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103k views <span>4 years</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4 py-6">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/noodles.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Noodles on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103M views <span>2 years</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4 py-6">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/curry.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            curry on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>13M views <span>2 Month</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4 py-6">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/curry.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            curry on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>23M views <span>4 Month</span></p>
+                        </div>
+                    </a>
+                </div>
+                 <div class=" mr-4">
+                    <a href="#">
+                        <img src="image/stew.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Stew on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103k views <span>4 years</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/noodles.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Noodles on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103M views <span>2 years</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/curry.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Noodles on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103M views <span>2 years</span></p>
+                        </div>
+                    </a>
+                </div>
+                <div class=" mr-4">
+                    <a href="#" class=" hover:bg-gray-800">
+                        <img src="image/noodles.jpg" alt="stew me" class=" mb-2">
+                        <div class=" text-gray-800">
+                            Noodles on the floor!
+                        </div>
+                        <div class=" text-xs text-gray-600">
+                            Keka Apa <i class="fa fa-check-circle"></i>
+                            <p>103M views <span>2 years</span></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
