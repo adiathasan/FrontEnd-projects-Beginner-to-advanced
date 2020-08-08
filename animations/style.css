@@ -1,0 +1,86 @@
+body{
+    background-color: #363434;
+    font-family: sans-serif;
+}
+
+
+.wrapper{
+    text-align: center;
+    padding: 200px 0;
+}
+
+.container{
+    display: inline-block;
+    background-color: honeydew;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+
+h1{
+    font-weight: 10px;
+    font-family:Verdana;
+    display: inline-block;
+    padding-bottom: 2px;
+    border-bottom: 2px solid gray;
+}
+
+.cross{
+    padding: 3px 6px;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    border-radius: 100px;
+    background-color: indianred;
+    cursor: pointer;
+}
+
+
+input{
+    border-radius: 10px;
+    padding: 4px 8px;
+    background-color: honeydew;
+    color: indigo;
+    text-align: center;
+}
+
+button{
+    border-radius: 10px;
+    padding: 4px 6px;
+    background-color: honeydew;
+    color: rgb(13, 5, 19);
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out .7s;
+}
+
+button:hover{
+    background-color: indigo;
+    color: lightblue;
+    border: 1px solid #c8ff00;
+    border-radius: 10px;
+    padding: 4px 6px;
+}
+
+
+#pop{
+    top: -500px;
+    transform-origin: 3px 6px;
+    animation: drop 1.5s ease forwards, 
+               swing 2s 2s ease-in forwards;
+}
+
+
+@keyframes drop{
+    0%{opacity: 0;}
+    70%{ transform: translateY(550px)}
+    100%{ transform: translateY(500px); opacity: 1;}
+}
+
+@keyframes swing{
+    0%{ transform: translateY(500px) rotateZ(0deg)}
+    40%{ transform: translateY(500px) rotateZ(75deg)}
+    80%{ transform: translateY(500px) rotateZ(60deg)}
+    100%{ transform: translateY(500px) rotateZ(70deg)}
+}
