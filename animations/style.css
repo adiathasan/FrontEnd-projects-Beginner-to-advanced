@@ -68,7 +68,7 @@ button:hover{
     top: -500px;
     transform-origin: 3px 6px;
     animation: drop 1.5s ease forwards, 
-               swing 2s 2s ease-in forwards;
+               swing 2s 2s ease-inT forwards;
 }
 
 
