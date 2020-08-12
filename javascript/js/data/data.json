@@ -1,0 +1,34 @@
+{
+    "persons": [
+        {
+            "name": "Rahim",
+            "age": 25,
+            "hometown": "Dhaka",
+            "married": false
+        },
+        {
+            "name": "Karim",
+            "age": 35,
+            "hometown": "Chittagong",
+            "married": true
+        },
+        {
+            "name": "Ayon",
+            "age": 27,
+            "hometown": "Chandpur",
+            "married": false
+        },
+        {
+            "name": "Rahat",
+            "age": 34,
+            "hometown": "Chittagong",
+            "married": true
+        },
+        {
+            "name": "Rony",
+            "age": 26,
+            "hometown": "Chittagong",
+            "married": false
+        }
+    ]
+}
