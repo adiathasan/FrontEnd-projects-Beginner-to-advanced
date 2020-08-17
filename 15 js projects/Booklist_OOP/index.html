@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <title>Task || list</title>
+</head>
+<body class=" bg-blue-200  font-serif">
+    <h3 class=" sticky top-0 flex items-center justify-center text-4xl shadow-lg bg-blue-400"><i class="fas fa-book-open"></i> My <span class=" text-red-700">|Task|</span> List</h3>
+    <div class="mt-32 mx-22 rounded-b-sm shadow-lg bg-pink-300 flex items-center justify-center pl-10 flex-wrap">
+        <form id="form" class=" text-center p-6">
+            <input type="text" id="task" name="task" placeholder="Add task" class="m-2 rounded bg-pink-100 p-1">
+        </form>
+            <input id="btn" class=" cursor-pointer w-auto text-center bg-blue-300 px-4 py-2 ml-20 rounded hover:bg-blue-200 mb-2 "
+            value="Add Task" type="button">
+        </div>
+    <div class="mt-12 m-12 pb-4 rounded-b-sm shadow-lg flex bg-pink-300 pl-10 items-center justify-center flex-col">
+        <h3 class=" text-center text-4xl uppercase">Tasks</h3>
+        <input type="text" id="filter" name="task" placeholder="filter task" class="m-2 rounded bg-pink-100 p-1">
+        <ol id="add" class=" list-decimal p-4 text-gray-700">
+
+        </ol>
+        <div class=" grid gap-4">
+            <button id='del' class=" cursor-pointer w-auto text-center bg-blue-300 px-4 py-2 rounded hover:bg-blue-200">Delete all</button >
+        </div>
+    </div> 
+    <script src="book.js"></script>
+</body>
+</html>
