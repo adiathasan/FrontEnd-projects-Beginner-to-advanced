@@ -46,8 +46,10 @@ del.addEventListener('click', ()=>{
         }
     }else{
         add.innerHTML = '<h4 class=" uppercase text-red-600">You have no task left</h4>'
+        del.style.display = 'none'
         setTimeout(()=>{
             add.innerHTML = ''
+            del.style.display = 'inline'
         }, 4000)
     }
 })
@@ -56,10 +58,12 @@ del.addEventListener('click', ()=>{
 // filtering tasks
 fil.addEventListener('keyup', (e)=>{
     let filVal = e.target.value.toLowerCase()
-    document.querySelectorAll('li').forEach(task=>{
+    document.querySelectorAll('li').forEach((task, index)=>{
         let v = task.firstChild.textContent
         if(v.toLowerCase().indexOf(filVal) != -1){
+            console.log(task)
             task.style.display = 'block'
+
         }else{
             task.style.display = 'none'
         }
@@ -126,70 +130,3 @@ function delteFromLocal(task){
 function allDeleteLocal(){
     localStorage.setItem('tasks', JSON.stringify([]))
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// btn.addEventListener("click", jhka)
-
-// function jhka(e) {
-//     console.log(input.value)
-//     if (input.value === '') {
-//         alert('input can not be null')
-//     } else {
-//         let td = document.createElement('tr')
-//         let a = document.createElement('a')
-//         a.setAttribute('href' ,'#')
-//         a.innerText= 'x'
-//         td.innerHTML = (`<td>${input.value}</td>`)
-//         td.appendChild(a)
-//         add.appendChild(td);
-//         input.value = ''
-        
-//     }
-
-// }
-
-// add.addEventListener('click',(e)=>{
-//     if(e.target.hasAttribute('href')){
-//         if(confirm('Are you sure!')){
-//             let grab = e.target.parentElement;
-//             grab.remove();
-//         }
-//     }
-// })
-
-// del.addEventListener('click', (e)=>{
-//     if (add.innerHTML !== '<tr><th></th></tr>'){
-//         if(confirm('Are you sure that you want to delete all!')){
-//             add.innerHTML = "<tr><th></th></tr>"
-//         }
-//     }
-// })
-
-// fil.addEventListener('keyup', (e)=>{
-//     let val = e.target.value.toLowerCase()
-//     document.querySelectorAll('tr').forEach( filter =>{
-//         let cell = filter.firstChild.textContent.toLowerCase()
-//         if(cell.indexOf(val) != -1){
-//             filter.style.display = 'block';
-//         }else{
-//             filter.style.display = 'none';
-//         }
-//     })
-// })
