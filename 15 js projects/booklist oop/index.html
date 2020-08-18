@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <title>Book list app</title>
+</head>
+<body class=" bg-dark">
+    <h1 class=" my-4 text-success text-center">My | <span class="text-danger">Book</span> | list</h1>
+    <div class="container bg-info m-auto text-light">
+        <div class="row align-items-center justify-content-center p-2 pb-4 mb-4">
+            <div class="col-md-10 col-lg-8">
+                <div class="card err d-none  text-center p-2">
+                    <div class="card-body">
+                        <p class=""></p>
+                    </div>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="book" class="form-label">Book</label>
+                        <input type="text" class="form-control" id="book" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="author" class="form-label">Author</label>
+                        <input type="text" class="form-control" id="author">
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">#ISBN</label>
+                        <input type="text" class="form-control" id="isbn">
+                    </div>
+                </form>
+                <button id="btn" type="submit" class="btn btn-dark btn-block">Add Book</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#ISBN</th>
+                    <th scope="col">Book</th>
+                    <th scope="col">Author</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="insert">
+
+                <!-- all injection will come here -->
+            
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
