@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 <div class=" p-c">
                         <p style=''  id=${list.id}>${index + 1}. ${list.title} </p>
                 </div>
-                <div class=" btn-u-d">
+                <div class=" btn-u-d ml-auto">
                     <button id="-${list.id}" class="btn btn-sm btn-outline-dark up" type="">Update</button> <a
                     id="^${list.id}"
                             class="btn btn-sm btn-danger" href="#^${list.id}">Delete</a>
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 <div class=" p-c">
                     <p style='' id=${list.id}>${index + 1}. ${list.title} </p>
                 </div>
-                <div class=" btn-u-d">
+                <div class=" btn-u-d ml-auto">
                     <button id="-${list.id}" class="btn btn-sm btn-outline-dark up" type="">Update</button> <a 
                     id="^${list.id}"
                             class="btn btn-sm btn-danger" href="#^${list.id}">Delete</a>
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 ).then(response=>{
                     dynamic()
                     url = 'http://127.0.0.1:8000/api/task-create/'
-                    notification('bg-danger', 'Task Delted!')
+                    notification('bg-danger', 'Task Deleted!')
                 })
 
         }
