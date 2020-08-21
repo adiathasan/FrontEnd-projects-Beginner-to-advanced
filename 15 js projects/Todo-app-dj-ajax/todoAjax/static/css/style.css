@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body{
+    background: rgb(53,52,57);
+    background: linear-gradient(90deg, rgba(53,52,57,1) 0%, rgba(119,54,142,1) 42%, rgba(13,166,201,0.9556197478991597) 100%);
+    font-family: sans-serif;
+}
+
+
+.n{
+    padding: 10px 4px;
+    margin: 140px auto;
+    background-color: rgba(59, 194, 228, 0.747);
+}
+
+
+.tasks{
+    margin: 6px auto
+}
+
+#add{
+    background-color: rgb(101, 238, 231);
+    cursor: pointer;
+}
+
+.form-wrapper{
+    background-color: lightseagreen;
+    margin: 0 4px 4px 8px; 
+    border-radius: 8px;
+}
+
+h4{
+    color: lightyellow;
+}
+
+.complete p{
+    text-decoration-line: line-through;
+}
+
+ /* span .l{
+     margin-left: 30%;
+     
+ } */
+
+#id  h3{
+    color: rgb(53,52,57);
+
+    border-radius: 4px;
+ }

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <script src="{% static 'js/main.js' %}"></script>
+    <title>To^do AJAX</title>
+</head>
+<body class="">
+    <div class="container text-center  n rounded shadow-lg ">
+        <div class="form-wrapper row sticky-top">
+            <form class="form col-12 container p-4">
+                <div class=" row">
+                    <div class="col-md-7 mb-2 col-12 ml-auto">
+                        <input type="text" class="form-control text-center text-dark" placeholder="add task.." id="title">
+                    </div>
+                    <div class=" col-md-3 col-12 mr-auto">
+                        <input type="submit" id="btn" class="btn  btn-warning btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tasks card  shadow-lg">
+            <div class="card-header bg-primary">
+                <h4>Tasks</h4>
+            </div>
+            <div class="card-body" id="add">
+                <h3 class=" text-danger">Loading...</h3>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+

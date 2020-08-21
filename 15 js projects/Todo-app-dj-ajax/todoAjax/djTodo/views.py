@@ -27,7 +27,7 @@ def json(request):
 
 @api_view(['GET',])
 def taskList(request):
-    tasks = Task.objects.all()
+    tasks = Task.objects.all().order_by('-id')
     serializer = TaskSerializers(tasks, many=True)
     return Response(serializer.data)
 
@@ -61,7 +61,7 @@ def taskUpdate(request, pk):
 def taskDelete(request, pk):
     obj = get_object_or_404(Task, id=pk)
     obj.delete()
-    return Response('destryed')
+    return Response('destroyed')
 
 
 
