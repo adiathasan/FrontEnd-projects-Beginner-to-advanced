@@ -5,51 +5,53 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Nav from './templates/nav'
 import About from './templates/about'
 import Home from './templates/home'
+import addPost from './templates/addPost'
+import postDetail from './templates/postDetail'
 
 
 
 class App extends Component {
-  state = {
-    list:[
+  // state = {
+  //   list:[
       
-    ]
-  }
+  //   ]
+  // }
 
-  addListHandler = (value) =>{
-    value.id = Math.random()
-    value.completed = false
-    const newLists = [value,...this.state.list]
-    this.setState({
-      list: newLists
-    })
+  // addListHandler = (value) =>{
+  //   value.id = Math.random()
+  //   value.completed = false
+  //   const newLists = [value,...this.state.list]
+  //   this.setState({
+  //     list: newLists
+  //   })
 
-  }
+  // }
 
-  handleDelete = (pk) =>{
-    let newList = this.state.list.filter(element=>{
-      return element.id != pk  
-    })
-    this.setState({
-      list: newList
-    })
-  }
+  // handleDelete = (pk) =>{
+  //   let newList = this.state.list.filter(element=>{
+  //     return element.id != pk  
+  //   })
+  //   this.setState({
+  //     list: newList
+  //   })
+  // }
 
-  completedHandler = (pk, tf) =>{
+  // completedHandler = (pk, tf) =>{
 
-    this.state.list.forEach(element =>{
-      if(element.id == pk){
-        element.completed = tf
-      }
+  //   this.state.list.forEach(element =>{
+  //     if(element.id == pk){
+  //       element.completed = tf
+  //     }
 
-    })
+  //   })
    
-    this.setState(
-      {
-        list: this.state.list
-      }
-    )
+  //   this.setState(
+  //     {
+  //       list: this.state.list
+  //     }
+  //   )
 
-  }
+  // }
 
 
   render() {
@@ -57,8 +59,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Nav/>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/about' component={About}/>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route path='/about' component={About}/>
+            <Route path='/addPost' component={addPost}/>
+            <Route path='/post/:post_id' component={postDetail}/>
+          </Switch>
           {/* <Todo addListHandler={this.addListHandler} />
           <UI handleDelete={this.handleDelete} completedHandler={this.completedHandler} todos={this.state.list} /> */}
         </div>

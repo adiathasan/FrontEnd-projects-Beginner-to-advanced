@@ -6,7 +6,15 @@ const initState = {
     ]
 }
 const rootReducer = (state = initState, action)=>{
-    return state
+    switch(action.type){
+        case 'ADD_POST':
+            return {
+                ...state,
+                posts: [...state.posts, action.post]
+            }
+        default:
+            return state
+    }
 }
 
 export default rootReducer

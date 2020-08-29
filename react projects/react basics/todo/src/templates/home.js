@@ -1,19 +1,28 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
     render(){
-        console.log(this.props)
         const { posts } = this.props
         const info = posts.length ? (
             
             posts.map(jsx =>{
 
             return (
-                <div className='mb-2 bg-danger text-light'>
-                    <p>{jsx.id}</p>
-                    <p>{jsx.title}</p>
+                <div className='row'>
+                    <div className='card mx-5 mt-4 mx-auto col-8'>
+                        <div className="card-header">
+                            <h4>{jsx.title}</h4>
+                        </div>
+                        <div className="card-body">
+                            <div className='mb-2 text-dark'>
+                                <Link to={'post/'+ jsx.id} className=' text-info text-decoration-none'>{jsx.body}</Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             )
 
             })
@@ -24,14 +33,7 @@ class Home extends Component {
 
         return(
             <div className='text-center container mt-3'>
-                <h3>Home</h3>
-                <div className='row'>
-                    <div className='card mx-auto mt-4'>
-                    <div className="card-body">
-                        <h6>{ info }</h6>
-                        </div>
-                    </div>
-                </div>
+                    {info}
             </div>
         )
     }
@@ -39,11 +41,10 @@ class Home extends Component {
 }
 
 const mapStateToProps = state=>{
-    return(
-        {
+    return {
             posts: state.posts
         }
-    )
+ 
 }
 
 export default connect(mapStateToProps)(Home)
