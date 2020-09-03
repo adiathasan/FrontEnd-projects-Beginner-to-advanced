@@ -1,4 +1,5 @@
 const notification = document.querySelector('.badge')
+const btns = document.querySelectorAll('.main button')
 
 let notif = 0
 
@@ -16,6 +17,8 @@ let totalHtml = document.getElementById('total')
 const market = document.querySelector('.market')
 
 let cart = document.getElementById('cart')
+
+const clear = document.querySelector('.clear')
 
 market.addEventListener('click', e =>{
     if(e.target.hasAttribute('id')){
@@ -44,6 +47,7 @@ const handleAddBtn = (e)=>{
     img = e.previousElementSibling.previousElementSibling.previousElementSibling
     console.log(img.src)
     check.classList.remove('d-none')
+    clear.classList.remove('d-none')
     cart.innerHTML += `<div class='row'>
                         <div class="col-4 img">
                             <img src=${img.src} class="img-fluid my-3  col-md-6"
@@ -104,12 +108,42 @@ cart.addEventListener('click', e =>{
         }
     }
 
-    if(totalHtml.innerHTML == 0){
-        check.classList.add('d-none')
-    }
 })
+
+
+
+
+clear.addEventListener('click', () => {
+    cart.innerHTML = ''
+    notification.innerHTML = 0 
+    totalHtml.innerHTML = 0
+    clear.classList.add('d-none')
+    check.classList.add('d-none')
+    btns.forEach(btn=>{
+        if(btn.hasAttribute('id')){
+            btn.classList.remove('d-none')
+            btn.nextElementSibling.classList.add('d-none')   
+        }
+    })
+
+})
+
+if (totalHtml.innerHTML == 0) {
+    check.classList.add('d-none')
+    clear.classList.add('d-none')
+}
 
 check.addEventListener('click', e=>{
     alert("To be continued")
-    window.location.href = '/'
+    cart.innerHTML = ''
+    notification.innerHTML = 0
+    totalHtml.innerHTML = 0
+    clear.classList.add('d-none')
+    check.classList.add('d-none')
+    btns.forEach(btn => {
+        if (btn.hasAttribute('id')) {
+            btn.classList.remove('d-none')
+            btn.nextElementSibling.classList.add('d-none')
+        }
+    })
 })
