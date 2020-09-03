@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess Game</title>
+</head>
+<body>
+    
+    <div class="container bg-dark py-5 mt-5 rounded shadow">
+        <div class="row">
+            <div class="col-md-9 col-12 mx-auto">
+                <div class="alert text-center alert-primary">
+                    <h5 id="alert-message">Never Tried yet?</h5>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-info text-center text-light">
+                        <h4>Guess A number between 0 to 10</h4>
+                    </div>
+                    <div class="card-body form">
+                        <form class=" d-flex justify-content-center">
+                            <input type="number" required class="form-control d-inline">
+                            <button class="btn btn-info  ml-auto">Guess</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-12 mx-auto mt-4">
+                <div class="card">
+                    <div class="card-header result-board bg-secondary text-center text-light">
+                        <h4>Result</h4>
+                    </div>
+                    <div class="card-body text-center result">
+                        <h3>You have 3 guess left! Hurry Up!!</h3>
+                    </div>
+                    <button class="try d-none btn btn-danger">Try again | Remember: Losers don't quit</button>
+                    <button class="try2 d-none btn btn-success">Wanna Try again Champ !!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+</html>
