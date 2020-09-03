@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <title>My shitty cart</title>
+</head>
+<body>
+<div class="container-fluid bg-warning shadow py-2 px-2 text-danger text-center">
+    <div class="container d-flex justify-content-between align-items-center ">
+        <h4>Just Shop It</h4><i class="fas fa-poo fa-3x"></i>
+        <button type="button" class="btn btn-dark shadow"><i class="fas fa-shopping-cart"></i>
+             <span class="badge badge-light">0</span>
+        </button>
+    </div>
+</div>
+
+    <div class="container my-4 p-1">
+        <div class="card p-2 mb-3 ">
+            <div class="card-bodycontainer-fuild">
+                <div class="row market">
+                    <div class="p-3 col-12 col-md-6">
+                        <img src="https://bonobos-contentful.imgix.net/1zbm708fksg8/3mvPUTgF24tLpfY3bvUbti/ed3537b3e7120a1280683fc8a8af3de4/PERFORMANCE_-_HP_DESKTOP_POD_-_LINEN_2.jpg?auto=format%2Ccompress&fit=clip&ixlib=react-8.6.1&h=1&w=1" class="img-fluid col-12 col-md-4" height="120" width="120" alt="">
+                        <span class="ml-3">Price: $</span><span>60</span>
+                        <button id="1" class="btn btn-warning mt-1 ml-3">Add to cart+</button> 
+                        <button class="btn btn-success ml-3 mt-1 d-none">Selected</button>
+
+                    </div>
+                    <div class="p-3 col-12 col-md-6">
+                        <img src="https://ictbyte.com/wp-content/uploads/2020/04/nokia-extends-warranty.jpg" class="img-fluid col-12 col-md-4" height="120" width="120" alt="">
+                        <span class="ml-3">Price: $</span><span>600</span>
+                        <button id="2" class="btn btn-warning  mt-1 ml-3">Add to cart+</button>
+                        <button class="btn btn-success ml-3 mt-1 d-none">Selected</button>
+                    </div>
+                    <div class="p-3 col-12 col-md-6">
+                        <img src="https://www.idgcdn.com.au/dimg/700x700/dimg/microsoft_windows_10_s_surface_laptop_1800x1200-100814366-orig_1.jpg" class="img-fluid col-12 col-md-4" height="120" width="120" alt="">
+                        <span  class="ml-3">Price: $</span><span>700</span>
+                        <button id="3" class="btn btn-warning mt-1 ml-3">Add to cart+</button>
+                        <button class="btn btn-success ml-3 mt-1 d-none">Selected</button>
+                    </div>
+                    <div class="p-3 col-12 col-md-6">
+                        <img src="https://cdn.mos.cms.futurecdn.net/EjcPhLNbF7c6Lgg4mKruJB-1200-80.jpg" class="img-fluid col-12 col-md-4" height="120" width="120" alt="">
+                        <span class="ml-3">Price: $</span><span>680</span>
+                        <button id="4" class="btn btn-warning  mt-1 ml-3">Add to cart+</button>
+                        <button class="btn btn-success ml-3 mt-1 d-none">Selected</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-4">
+        <div class="card p-2 mb-3 ">
+            <div class="card-header text-center bg-info text-light">
+                <h4>Your Cart</h4>
+            </div>
+            <div class="card-body ">
+                <div class="container-fuild" id='cart'>
+                    
+                    <!-- will come from js -->
+
+                </div>
+                <div class="row border-top border-dark d-flex       justify-content-between pt-3 mt-3">
+                    <p>Total: </p>
+                    <span class="mr-3">$ <span id="total">0</span></span>
+                </div>
+            </div>
+            <button class="checkout btn btn-warning d-none">Checkout</button>
+        </div>
+    </div>  
+
+    <script src="cart.js"></script>
+</body>
+</html>
