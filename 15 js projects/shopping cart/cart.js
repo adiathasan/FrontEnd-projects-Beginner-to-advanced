@@ -106,6 +106,11 @@ cart.addEventListener('click', e =>{
 
 
         }
+
+        if(totalHtml.innerHTML == 0){
+            clear.classList.add('d-none')
+            check.classList.add('d-none')
+        }
     }
 
 })
