@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
+import React, {useContext} from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { PostContext } from '../context/postContext'
 
-class Home extends Component {
-    render(){
-        const { posts } = this.props
+const Home = ()=> {
+        const {posts} = useContext(PostContext)
         const info = posts.length ? (
             
             posts.map(jsx =>{
 
             return (
-                <div className='row'>
+                <div className='row' key={jsx.id}>
                     <div className='card mx-5 mt-4 mx-auto col-8'>
                         <div className="card-header">
                             <h4>{jsx.title}</h4>
@@ -38,7 +38,6 @@ class Home extends Component {
         )
     }
 
-}
 
 const mapStateToProps = state=>{
     return {
